@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         retriveBtn=findViewById(R.id.retriveBTN);
          userDao = ((DemoDatabaseApp)getApplication()).getDaoSession().getUserDao();
         userDao.insertOrReplace(new User(1L, "Franklin Jino","1111", "2222"));
-
+        Toast.makeText(MainActivity.this,"Insert Successfully",Toast.LENGTH_LONG).show();
 
         retriveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
